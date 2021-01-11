@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import Og_Img, Bg_remove, Background, Final_img
 
+
 @admin.register(Og_Img)
 class Og_ImgAdmin(admin.ModelAdmin):
     list_display = ('id', 'img')
