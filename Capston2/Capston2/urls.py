@@ -21,7 +21,7 @@ from Capston2.views import HomeView, UserCreateView, UserCreateDoneTV, descripti
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #홈 뷰 
+    #홈뷰 
     path('', HomeView.as_view(), name='home'), #url 패턴명 = home
     #설명 뷰
     path('description/', descriptionView.as_view(), name='description'),
