@@ -33,6 +33,7 @@ class ThumbnailImageFieldFile(ImageFieldFile):
             os.remove(self.thumb_path)
         super().delete(save)
 
+        
 class ThumbnailImageField(ImageField):
     attr_class = ThumbnailImageFieldFile
 
