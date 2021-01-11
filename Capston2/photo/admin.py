@@ -2,6 +2,7 @@ from django.contrib import admin
 from .models import Album, Photo
 # models.py에서 정의한 테이블들 Admin페이지에서 어떻게 보이게 할 것인가
 
+
 # Album : Photo ==> 1 : N 관계
 # 서로 연결된 테이블을 보여주는 방법(Album을 보여줄 때 여러 장의 Photo를 보여주는 것), 형식 = StackedInline(세로 나열) / TabularInline(행으로 나열)
 class PhotoInline(admin.StackedInline):
