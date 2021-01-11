@@ -7,6 +7,7 @@ class ImgForm(forms.ModelForm):
         fields = ['img']
        #S widgets = {'img': forms.HiddenInput()}
 
+    
 class BgForm(forms.ModelForm):
     class Meta:
         model = Background
