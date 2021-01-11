@@ -1,5 +1,5 @@
 from django.views.generic.base import TemplateView
-from django.views.generic import CreateView # 테이블에 새로운 레코드(폼에 입력된 데이터) 생성하는 뷰(추가)
+from django.views.generic import CreateView # 테이블에 새로운 레코드(폼에 입력된 데이터) 생성하는 뷰
 from django.contrib.auth.forms import UserCreationForm # User 객체 생성
 from django.urls import reverse_lazy # 인자로 URL 패턴을 받음
 
