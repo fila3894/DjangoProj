@@ -10,6 +10,7 @@ import datetime as dt
 
 dlab = models.segmentation.deeplabv3_resnet101(pretrained=1).eval()
 
+
 #추출할 객체 이미지와 배경 합성 함수
 def decode_segmap(image, source, bgimg, count, nc=21):
   
