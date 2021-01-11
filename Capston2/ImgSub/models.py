@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Og_Img(models.Model):
     #원본 이미지 저장
     img = models.ImageField(upload_to='original/')
