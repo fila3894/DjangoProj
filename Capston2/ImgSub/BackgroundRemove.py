@@ -83,6 +83,7 @@ class ImageProcessing():
 
     return image_name
 
+  
   #이미지 사이즈 조정 및 전처리 함수
   def segment(net, path, show_orig=True, dev='cuda'):
     img = Image.open(path)
