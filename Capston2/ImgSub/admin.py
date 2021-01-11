@@ -5,11 +5,9 @@ from .models import Og_Img, Bg_remove, Background, Final_img
 class Og_ImgAdmin(admin.ModelAdmin):
     list_display = ('id', 'img')
 
-
 @admin.register(Bg_remove)
 class Bg_removeAdmin(admin.ModelAdmin):
     list_display = ('id', 'rm_img')
-
 
 @admin.register(Final_img)
 class Final_imgAdmin(admin.ModelAdmin):
