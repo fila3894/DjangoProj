@@ -24,6 +24,7 @@ class Photo(models.Model):
     image = ThumbnailImageField(upload_to='photo/%Y/%m')
     upload_dt = models.DateTimeField('업로드 일자', auto_now_add=True) # 사진이 업로드 되는 시간을 저장
 
+    
     # 내부 클래스 // 객체 리스트 출력 시 순서(title 컬럼 기준으로)
     class Meta: 
         ordering = ('title',)
