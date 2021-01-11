@@ -31,16 +31,14 @@ def img_upload(request):
         'form' : form,
     })
          
-    
-
+#최종 결과물(이미지) 페이지
 def fin_output(request):
     proImg2 = Background.objects.all()
     return render(request, 'ImgSub/final_output.html',{
         'proImg2' : proImg2
     })
 
-
-
+#배경 이미지 업로드 페이지
 def c_upload(request):
     if request.method == 'POST':   
         form2 = BgForm(request.POST, request.FILES)
